@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, session, render_template, json
+from flask import Flask, request, jsonify, session, render_template
 
 from src import Operations
 from src.Calculator import Calculator
