@@ -1,4 +1,6 @@
-from flask import Flask, request, jsonify, session, render_template
+from flask import Flask, request, jsonify, session, render_template, json
+
+from src import Operations
 from src.Calculator import Calculator
 from src.Util import Util
 
@@ -45,7 +47,6 @@ def calculator():
         session['calc_response'] = response
 
     return jsonify(response)
-
 
 if __name__ == "__main__":
     app.run()
